@@ -17,13 +17,13 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: main.tex
-          latex_engine: pdflatex
-          extra_packages: scheme-medium
+          latex_engine: xelatex
+          extra_packages: scheme-full
           args: |
-            pdflatex
+            xelatex
             biber
-            pdflatex
-            pdflatex
+            xelatex
+            xelatex
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
