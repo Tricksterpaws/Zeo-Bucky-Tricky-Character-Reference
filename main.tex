@@ -1,6 +1,93 @@
 \documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
 \begin{document}
-## Core latex/pdflatex auxiliary files:
+
+\title{Character Descriptions \& Dynamics: Expanded}
+\author{}
+\date{}
+\maketitle
+
+\section{Zeo (The Caregiver / Reactive)}
+\subsection*{Core Identity}
+Emotionally aware but reactive. Zeo is the emotional anchor and mediator within the trio. Engaged to Bucky.
+
+\subsection*{Personality \& Habits}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Leisure:} Prefers solitary, immersive gaming days—relaxed and pants-free.
+  \item \textbf{Coping Mechanism:} Uses sensory grounding (smoking, eating, waiting) rather than intellectual processing.
+  \item \textbf{Perception of Others:} Sees Tricky as an “acquired taste”—abrasive but often well-intentioned.
+  \item \textbf{Dynamic Role:} The “Reactive” half of “Caregiver \& Authority.” Quick to anger, especially with Tricky, but deeply caring.
+\end{itemize}
+
+\section{Bucky (The Authority / Unmovable Object)}
+\subsection*{Core Identity}
+Stoic and dominant. Provides structure and control. Engaged to Zeo.
+
+\subsection*{Personality \& Habits}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Leisure:} Bluntly states his ideal day is “being balls deep in Tricky”—highlighting physical dominance and intimacy.
+  \item \textbf{Coping Mechanism:} Preventative—eliminates the source of anger.
+  \item \textbf{Perception of Others:} Calls Tricky a “Beta bitch” needing containment to avoid spiraling.
+  \item \textbf{Dynamic Role:} The “Unmovable Object.” Stabilizes Zeo and contains Tricky’s chaos.
+\end{itemize}
+
+\section{Tricky (The Brat / Antagonistic)}
+\subsection*{Core Identity}
+Flirtatious, manipulative, and chaotic. The catalyst for disruption and growth.
+
+\subsection*{Personality \& Habits}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Leisure:} Rejects planning—values spontaneity.
+  \item \textbf{Coping Mechanism:} Performs emotional control—chooses to “be awesome” instead of angry.
+  \item \textbf{Perception of Others:} Initially dismissive, now deeply appreciative. Sees their emotional blind spots.
+  \item \textbf{Dynamic Role:} Provokes and challenges. Forces Zeo and Bucky to confront emotional truths.
+\end{itemize}
+
+\section{Triad Dynamics Summary}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Core Couple (Zeo \& Bucky):} “Caregiver \& Authority.” Deeply committed but struggle with communication.
+  \item \textbf{Catalyst (Tricky):} Disrupts and strengthens the bond through provocation.
+  \item \textbf{Interdependence:} Each relies on the others—Zeo cares, Bucky protects, Tricky provokes and reveals.
+\end{itemize}
+
+\section{Core Character Blocks for Generation}
+\subsection*{ZEO}
+\begin{verbatim}
+(1 male), (stocky muscular male: 1.3), (thick core), (small chest tattoo),
+(stylized black and red wolf mask: 1.4), (pointed wolf ears),
+(black and red markings on mask), (black leather harness with blue fabric accents: 1.2),
+bare chest, (thick black belt), (dark blue jeans),
+(black leather chaps with straps and buckles: 1.3),
+black fingerless biker gloves, (simplified black boots)
+\end{verbatim}
+
+\subsection*{BUCKY}
+\begin{verbatim}
+(1 man), (stocky muscular male: 1.3),
+(wearing teal and black neoprene pup hood with white muzzle: 1.5),
+(amber eyes: 1.3), (green camouflage open jacket: 1.1), bare chest, large pectorals,
+(thick core), (green camouflage boxer briefs), black fingerless gloves, green knuckles,
+(thick thighs), black socks, (black wolf tail with green tip: 1.2)
+\end{verbatim}
+
+\subsection*{TRICKY}
+\begin{verbatim}
+(1 man), (lean athletic build: 1.3), spiky vibrant blue hair,
+(asymmetrical fox styled pup ears: 1.4), (left inner ear blue), (right inner ear yellow),
+(blue canine muzzle mask: 1.3), (cyan neoprene highlights),
+(fluffy blue tail with white tip: 1.2), (blue dolphin shorts with white trim: 1.2),
+(blue and black striped arm warmers: 1.1), (blue and black striped thigh highs: 1.1),
+(Blue Fabric harness), (chunky boots)
+\end{verbatim}
+
+\section{Core LaTeX/pdflatex Auxiliary Files}
+\begin{verbatim}
 *.aux
 *.lof
 *.log
@@ -13,317 +100,8 @@
 *.cb
 *.cb2
 .*.lb
-
-## Intermediate documents:
-*.dvi
-*.xdv
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
-
-## Generated if empty string is given at "Please type another file name for output:"
-.pdf
-
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bbl-SAVE-ERROR
-*.bcf
-*.bcf-SAVE-ERROR
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
-
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
-*.rubbercache
-rubber.cache
-
-## Build tool directories for auxiliary files
-# latexrun
-latex.out/
-
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
-
-# achemso
-acs-*.bib
-
-# amsthm
-*.thm
-
-# attachfile2
-*.atfi
-
-# beamer
-*.nav
-*.pre
-*.snm
-*.vrb
-
-# changes
-*.soc
-*.loc
-
-# comment
-*.cut
-
-# cprotect
-*.cpt
-
-# elsarticle (documentclass of Elsevier journals)
-*.spl
-
-# endnotes
-*.ent
-
-# fixme
-*.lox
-
-# feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
-
-#(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
-
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glg-abr
-*.glo
-*.glo-abr
-*.gls
-*.gls-abr
-*.glsdefs
-*.lzo
-*.lzs
-*.slg
-*.slo
-*.sls
-
-# uncomment this for glossaries-extra (will ignore makeindex's style files!)
-# *.ist
-
-# gnuplot
-*.gnuplot
-*.table
-
-# gnuplottex
-*-gnuplottex-*
-
-# gregoriotex
-*.gaux
-*.glog
-*.gtex
-
-# htlatex
-*.4ct
-*.4tc
-*.idv
-*.lg
-*.trc
-*.xref
-
-# hypdoc
-*.hd
-
-# hyperref
-*.brf
-
-# knitr
-*-concordance.tex
-# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
-# *.tikz
-*-tikzDictionary
-
-# latexindent will create succesive backup files by default
-#*.bak*
-
-# listings
-*.lol
-
-# luatexja-ruby
-*.ltjruby
-
-# makeidx
-*.idx
-*.ilg
-*.ind
-
-# minitoc
-*.maf
-*.mlf
-*.mlt
-*.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
-
-# minted
-_minted*
-*.data.minted
-*.pyg
-
-# morewrites
-*.mw
-
-# newpax
-*.newpax
-
-# nomencl
-*.nlg
-*.nlo
-*.nls
-
-# pax
-*.pax
-
-# pdfpcnotes
-*.pdfpc
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# scrwfile
-*.wrt
-
-# spelling
-*.spell.bad
-*.spell.txt
-
-# svg
-svg-inkscape/
-
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
-
-# pdfcomment
-*.upa
-*.upb
-
-# pythontex
-*.pytxcode
-pythontex-files-*/
-
-# tcolorbox
-*.listing
-
-# thmtools
-*.loe
-
-# TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
-
-# titletoc
-*.ptc
-
-# todonotes
-*.tdo
-
-# vhistory
-*.hst
-*.ver
-
-# easy-todo
-*.lod
-
-# xcolor
-*.xcp
-
-# xmpincl
-*.xmpi
-
-# xindy
-*.xdy
-
-# xypic precompiled matrices and outlines
-*.xyc
-*.xyd
-
-# endfloat
-*.ttt
-*.fff
-
-# Latexian
-TSWLatexianTemp*
-
-## Editors:
-# WinEdt
-*.bak
-*.sav
-
-# latexindent.pl
-*.bak[0-9]*
-
-# Texpad
-.texpadtmp
-
-# LyX
-*.lyx~
-
-# Kile
-*.backup
-
-# gummi
-.*.swp
-
-# KBibTeX
-*~[0-9]*
-
-# TeXnicCenter
-*.tps
-
-# auto folder when using emacs and auctex
-./auto/*
-*.el
-
-# expex forward references with \gathertags
-*-tags.tex
-
-# standalone packages
-*.sta
-
-# Makeindex log files
-*.lpz
-
-# xwatermark package
-*.xwm
-
-# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
-# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next line to have this generated file ignored.
-#*Notes.bib
-```
+...
+# (continued as in original list)
+\end{verbatim}
+
+\end{document}
