@@ -13,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install extra TeX packages
-        run: sudo apt-get install -y texlive-full # Example for scheme-full
+      - name: Install Required TeX Packages
+        run: sudo apt-get install -y texlive-xetex texlive-bibtex-extra biber
 
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v4
@@ -30,3 +30,11 @@ jobs:
         with:
           name: Character-Reference.pdf
           path: main.pdf
+
+      - name: Debug Logs (Optional)
+        if: failure()
+        run: |
+          echo "=== LATEX LOG ==="
+          cat main.log || true
+          echo "=== BIBER LOG ==="
+          cat main.blg || true
