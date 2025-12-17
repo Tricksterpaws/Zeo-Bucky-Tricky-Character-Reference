@@ -13,17 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install extra TeX packages
+        run: sudo apt-get install -y texlive-full # Example for scheme-full
+
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v4
         with:
           root_file: main.tex
-          latex_engine: xelatex
-          extra_packages: scheme-full
+          compiler: xelatex
           args: |
             xelatex
             biber
-            xelatex
-            xelatex
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
