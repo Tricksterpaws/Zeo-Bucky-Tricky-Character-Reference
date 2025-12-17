@@ -1,5 +1,7 @@
 name: Compile LaTeX Document
-
+with:
+  root_file: main.tex
+  extra_packages: scheme-full  # or scheme-medium if full is too big
 on:
   push:
     branches: [ main ]
